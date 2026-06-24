@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pipeline Accident Analysis</title>
+  <style>
+    :root {
+      --bg: #eef4ef;
+      --card: #ffffff;
+      --ink: #193025;
+      --muted: #567060;
+      --line: #cfe0d3;
+      --accent: #2c6b4f;
+      --accent-2: #6fa684;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      background: linear-gradient(180deg, #f4f8f4 0%, var(--bg) 100%);
+    }
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 28px 22px 56px;
+    }
+    .hero {
+      background: linear-gradient(135deg, #2c6b4f 0%, #7cad8e 100%);
+      color: white;
+      border-radius: 22px;
+      padding: 34px 36px;
+      box-shadow: 0 18px 40px rgba(28, 66, 49, 0.18);
+    }
+    .hero h1 {
+      margin: 0 0 10px;
+      font-size: 34px;
+      line-height: 1.15;
+    }
+    .hero p {
+      margin: 0;
+      max-width: 860px;
+      font-size: 17px;
+      color: rgba(255,255,255,0.92);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 22px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 22px;
+      box-shadow: 0 10px 24px rgba(39, 63, 48, 0.05);
+    }
+    .card h2 {
+      margin: 0 0 8px;
+      font-size: 22px;
+    }
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+    .links {
+      margin-top: 16px;
+      display: grid;
+      gap: 12px;
+    }
+    .link {
+      display: block;
+      text-decoration: none;
+      color: var(--ink);
+      background: #f9fcfa;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px 16px;
+      transition: background 0.15s ease, transform 0.15s ease;
+    }
+    .link:hover {
+      background: #f1f8f3;
+      transform: translateY(-1px);
+    }
+    .link strong {
+      display: block;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+    .small {
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .section {
+      margin-top: 22px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 22px;
+      box-shadow: 0 10px 24px rgba(39, 63, 48, 0.05);
+    }
+    .section h2 {
+      margin: 0 0 12px;
+      font-size: 22px;
+    }
+    ul {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    @media (max-width: 860px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <section class="hero">
+      <h1>Pipeline Accident Analysis</h1>
+      <p>This index page collects the main deliverables for the hazardous liquid pipeline accident project so the final report, slides, walkthrough, notebook export, and chart outputs are easy to open from one place.</p>
+    </section>
+
+    <div class="grid">
+      <section class="card">
+        <h2>Main Deliverables</h2>
+        <p>The core final submission files are linked below.</p>
+        <div class="links">
+          <a class="link" href="../Final%20Project/hazardous_liquid_project_walkthrough.html">
+            <strong>Project Walkthrough HTML</strong>
+            <span class="small">Presentation-style project page with chart explanations and results</span>
+          </a>
+          <a class="link" href="../Final%20Project/hazardous_liquid_pipeline_final_report.pdf">
+            <strong>Final Report PDF</strong>
+            <span class="small">Written final report submission</span>
+          </a>
+          <a class="link" href="../Final%20Project/hazardous_liquid_pipeline_final_slides.pdf">
+            <strong>Final Slides PDF</strong>
+            <span class="small">Presentation version of the final project</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Working Files</h2>
+        <p>These files are useful if you want to review the project at the notebook or editable-document level.</p>
+        <div class="links">
+          <a class="link" href="../pipeline_incident_project/notebooks/hazardous_liquid_pipeline_final_analysis.html">
+            <strong>Notebook HTML Export</strong>
+            <span class="small">Rendered notebook output</span>
+          </a>
+          <a class="link" href="../Final%20Project/hazardous_liquid_pipeline_final_report.docx">
+            <strong>Final Report DOCX</strong>
+            <span class="small">Editable Word version</span>
+          </a>
+          <a class="link" href="../Final%20Project/hazardous_liquid_pipeline_final_slides.pptx">
+            <strong>Final Slides PPTX</strong>
+            <span class="small">Editable PowerPoint version</span>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <section class="section">
+      <h2>Key Visual Exports</h2>
+      <div class="links">
+        <a class="link" href="../Final%20Project/hazardous_liquid_incidents_by_year.png"><strong>Incidents by Year</strong><span class="small">Trend in hazardous liquid accident counts over time</span></a>
+        <a class="link" href="../Final%20Project/hazardous_liquid_top_states.png"><strong>Top States</strong><span class="small">States with the most recorded accidents</span></a>
+        <a class="link" href="../Final%20Project/hazardous_liquid_incidents_by_cause.png"><strong>Incidents by Cause</strong><span class="small">Most common cause categories</span></a>
+        <a class="link" href="../Final%20Project/hazardous_liquid_incidents_by_commodity.png"><strong>Incidents by Commodity</strong><span class="small">Main commodity categories in the file</span></a>
+        <a class="link" href="../Final%20Project/hazardous_liquid_cost_by_cause.png"><strong>Cost by Cause</strong><span class="small">Median cost differences across causes</span></a>
+        <a class="link" href="../Final%20Project/hazardous_liquid_confusion_matrix.png"><strong>Confusion Matrix</strong><span class="small">Model evaluation snapshot</span></a>
+        <a class="link" href="../Final%20Project/hazardous_liquid_feature_importance.png"><strong>Feature Importance</strong><span class="small">Top drivers from the random forest model</span></a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Project Snapshot</h2>
+      <ul>
+        <li>Dataset used: PHMSA hazardous liquid accident data from January 2010 to present</li>
+        <li>Main focus: safety and cost risk patterns</li>
+        <li>Target created: <code>high_cost_incident</code></li>
+        <li>Best model in the final comparison: Random Forest</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
